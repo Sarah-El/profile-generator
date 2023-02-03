@@ -11,7 +11,38 @@ const outputPath = path.join(OUTPUT_DIR, "team.html");
 const render = require("./src/page-template.js");
 
 // Empty team array
-let teamMembers = [];
+let teamArray = [];
 
+
+// Employee questions array
+
+const questions = [
+    {
+        type: "input",
+        name: "name",
+        message: "What is the team manager's name?"
+    },
+    {
+        type: "input",
+        name: "id",
+        message: "What is the team manager's ID?"
+    },
+    {
+        type: "input",
+        name: "email",
+        message: "What is the team manager's email address?"
+    },
+    {
+        type: "input",
+        name: "email",
+        message: "What is the team manager's office number?"
+    },
+    {
+        type: "list",
+        name: "role",
+        message: "Add a team member (use arrow keys)",
+        choices: ["Engineer", "Intern", "I don't want to add any more team members"]
+    }
+]
 
 
