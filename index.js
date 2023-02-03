@@ -10,7 +10,7 @@ const outputPath = path.join(OUTPUT_DIR, "team.html");
 
 const render = require("./src/page-template.js");
 
-// Empty team array to 
+// Empty team array
 let teamMembers = [];
 
 
