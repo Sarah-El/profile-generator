@@ -96,7 +96,7 @@ function buildTeam() {
       fs.mkdirSync(OUTPUT_DIR)
     }
     fs.writeFileSync(outputPath, render(teamMembers), "utf-8");
-  }
+  };
 
 // Function to add to team
 
@@ -117,7 +117,7 @@ function addToTeam () {
             buildTeam();
         }
     })
-}
+};
 
 // Function to prompt manager questions
 
@@ -127,5 +127,7 @@ function addManager() {
         team.push(manager);
         addToTeam();
     })
-}
+};
+
+
 
