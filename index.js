@@ -11,12 +11,12 @@ const outputPath = path.join(OUTPUT_DIR, "team.html");
 const render = require("./src/page-template.js");
 
 // Empty team array
-let teamArray = [];
+const team = [];
 
 
-// Employee questions array
+// Manager questions array
 
-const questions = [
+const ManagerQuestions = [
     {
         type: "input",
         name: "name",
@@ -43,6 +43,63 @@ const questions = [
         message: "Add a team member (use arrow keys)",
         choices: ["Engineer", "Intern", "I don't want to add any more team members"]
     }
-]
+];
 
+const engineerQuestions = [
+    {
+        type: "input",
+        name: "name",
+        message: "What is the Engineer's name?"
+    },
+    {
+        type: "input",
+        name: "id",
+        message: "What is the Engineer's ID?"
+    },
+    {
+        type: "input",
+        name: "email",
+        message: "What is the Engineer's email address?"
+    },
+    {
+        type: "input",
+        name: "email",
+        message: "What is the the Engineer's GitHub username?"
+    },
+    {
+        type: "list",
+        name: "role",
+        message: "Add a team member (use arrow keys)",
+        choices: ["Engineer", "Intern", "I don't want to add any more team members"]
+    }
+];
+
+const InternQuestions = [
+    {
+        type: "input",
+        name: "name",
+        message: "What is the Intern's name?"
+    },
+    {
+        type: "input",
+        name: "id",
+        message: "What is the Intern's ID?"
+    },
+    {
+        type: "input",
+        name: "email",
+        message: "What is the Intern's email address?"
+    },
+    {
+        type: "input",
+        name: "email",
+        message: "What is the the Intern's school?"
+    },
+    {
+        type: "list",
+        name: "role",
+        message: "Add a team member (use arrow keys)",
+        choices: ["Engineer", "Intern", "I don't want to add any more team members"]
+    }
+];
 
