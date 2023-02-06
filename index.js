@@ -97,7 +97,7 @@ function buildTeam() {
     }
     fs.writeFileSync(outputPath, render(teamMembers), "utf-8");
   }
-  
+
 // Function to add to team
 
 function addToTeam () {
@@ -116,6 +116,16 @@ function addToTeam () {
         } else {
             buildTeam();
         }
+    })
+}
+
+// Function to prompt manager questions
+
+function addManager() {
+    inquirer.prompt(managerQuestions).then((data) => {
+        const manager = new Manager(data.name, data.id, data.email, data.officeNumber)
+        team.push(manager);
+        addToTeam();
     })
 }
 
