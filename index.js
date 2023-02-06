@@ -88,3 +88,34 @@ const InternQuestions = [
         message: "What is the the Intern's school?"
     }
 ];
+
+// Function to build team
+
+function buildTeam() {
+    if (!fs.existsSync(OUTPUT_DIR)) {
+      fs.mkdirSync(OUTPUT_DIR)
+    }
+    fs.writeFileSync(outputPath, render(teamMembers), "utf-8");
+  }
+  
+// Function to add to team
+
+function addToTeam () {
+    inquirer.prompt([
+        {
+            type: "list",
+            name: "role",
+            message: "Add a team member (use arrow keys)",
+            choices: ["Engineer", "Intern", "I don't want to add any more team members"]
+        }
+    ]).then((data) => {
+        if (data.role === "Engineer") {
+            addEngineer();
+        } else if (data.role === "Intern") {
+            addIntern();
+        } else {
+            buildTeam();
+        }
+    })
+}
+
