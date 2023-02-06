@@ -129,5 +129,23 @@ function addManager() {
     })
 };
 
+// Function to add Engineer
 
+function addEngineer() {
+    inquirer.prompt(engineerQuestions).then((data) => {
+        const engineer = new Engineer(data.name, data.id, data.email, data.gitHub)
+        team.push(engineer);
+        addToTeam();
+    })    
+}
+
+// Function to add intern
+
+function addIntern() {
+    inquirer.prompt(internQuestions).then((data) => {
+        const intern = new Intern(data.name, data.id, data.email, data.school)
+        team.push(intern);
+        addToTeam();
+    })    
+}
 
