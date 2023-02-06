@@ -16,7 +16,7 @@ const team = [];
 
 // Manager questions array
 
-const ManagerQuestions = [
+const managerQuestions = [
     {
         type: "input",
         name: "name",
@@ -36,14 +36,10 @@ const ManagerQuestions = [
         type: "input",
         name: "email",
         message: "What is the team manager's office number?"
-    },
-    {
-        type: "list",
-        name: "role",
-        message: "Add a team member (use arrow keys)",
-        choices: ["Engineer", "Intern", "I don't want to add any more team members"]
     }
 ];
+
+// Engineer questions array
 
 const engineerQuestions = [
     {
@@ -65,14 +61,10 @@ const engineerQuestions = [
         type: "input",
         name: "email",
         message: "What is the the Engineer's GitHub username?"
-    },
-    {
-        type: "list",
-        name: "role",
-        message: "Add a team member (use arrow keys)",
-        choices: ["Engineer", "Intern", "I don't want to add any more team members"]
     }
 ];
+
+// Intern questions array
 
 const InternQuestions = [
     {
@@ -94,12 +86,5 @@ const InternQuestions = [
         type: "input",
         name: "email",
         message: "What is the the Intern's school?"
-    },
-    {
-        type: "list",
-        name: "role",
-        message: "Add a team member (use arrow keys)",
-        choices: ["Engineer", "Intern", "I don't want to add any more team members"]
     }
 ];
-
