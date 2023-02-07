@@ -1,6 +1,6 @@
 # Profile Generator
 
-  ![Github licence](http://img.shields.io/badge/license-${data.license}-blue.svg)
+  ![Github licence](http://img.shields.io/badge/license-MIT-blue.svg)
 
   ## Description
   This project is designed to help team managers to quickly and efficiently create a team profile 
