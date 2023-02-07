@@ -36,7 +36,7 @@ const managerQuestions = [
         type: "input",
         name: "officeNumber",
         message: "What is the team manager's office number?"
-    },
+    }
 ];
 
 // Engineer questions array
@@ -148,6 +148,8 @@ function addIntern() {
         addToTeam();
     })    
 };
+
+// Calling function to initiate questions
 
 addManager();
 
