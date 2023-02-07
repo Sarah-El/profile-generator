@@ -11,7 +11,7 @@ const outputPath = path.join(OUTPUT_DIR, "team.html");
 const render = require("./src/page-template.js");
 
 // Empty team array
-const team = [];
+const teamMembers = [];
 
 
 // Manager questions array
@@ -34,9 +34,9 @@ const managerQuestions = [
     },
     {
         type: "input",
-        name: "email",
+        name: "officeNumber",
         message: "What is the team manager's office number?"
-    }
+    },
 ];
 
 // Engineer questions array
@@ -59,14 +59,14 @@ const engineerQuestions = [
     },
     {
         type: "input",
-        name: "email",
+        name: "gitHub",
         message: "What is the the Engineer's GitHub username?"
     }
 ];
 
 // Intern questions array
 
-const InternQuestions = [
+const internQuestions = [
     {
         type: "input",
         name: "name",
@@ -84,7 +84,7 @@ const InternQuestions = [
     },
     {
         type: "input",
-        name: "email",
+        name: "school",
         message: "What is the the Intern's school?"
     }
 ];
@@ -124,7 +124,7 @@ function addToTeam () {
 function addManager() {
     inquirer.prompt(managerQuestions).then((data) => {
         const manager = new Manager(data.name, data.id, data.email, data.officeNumber)
-        team.push(manager);
+        teamMembers.push(manager);
         addToTeam();
     })
 };
@@ -134,18 +134,20 @@ function addManager() {
 function addEngineer() {
     inquirer.prompt(engineerQuestions).then((data) => {
         const engineer = new Engineer(data.name, data.id, data.email, data.gitHub)
-        team.push(engineer);
+        teamMembers.push(engineer);
         addToTeam();
     })    
-}
+};
 
 // Function to add intern
 
 function addIntern() {
     inquirer.prompt(internQuestions).then((data) => {
         const intern = new Intern(data.name, data.id, data.email, data.school)
-        team.push(intern);
+        teamMembers.push(intern);
         addToTeam();
     })    
-}
+};
+
+addManager();
 
