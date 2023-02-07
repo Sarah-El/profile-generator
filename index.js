@@ -20,12 +20,12 @@ const managerQuestions = [
     {
         type: "input",
         name: "name",
-        message: "What is the team manager's name?"
+        message: "What is the team manager's name?",
     },
     {
         type: "input",
         name: "id",
-        message: "What is the team manager's ID?"
+        message: "What is the team manager's ID?",
     },
     {
         type: "input",
