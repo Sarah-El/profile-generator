@@ -14,8 +14,9 @@
   * [Licence](#license)
   * [Contributing](#contributing)
   * [Tests](#testing)
-  * [Questions](#questions)
+  * [Link to Live](#Live)
   * [Screnshots](#screenshots)
+  * [Questions](#questions)
 
   ## Installation
   To install this application, please clone the repository and install Node JS and the inquirer package.
@@ -33,12 +34,15 @@
   ## Tests
   N/A
 
+  ## Live
+  Link to live application: https://sarah-el.github.io/profile-generator/output/team.html
+  
+  ## Screenshots
+  ![image](https://user-images.githubusercontent.com/117095370/217194931-3e636fe7-8285-441b-a545-f25e7a9678e1.png)
+  ![image](https://user-images.githubusercontent.com/117095370/217194999-6cd44147-3ab1-47e6-a53d-41fe18fca358.png)
+
   ## Questions
   For questions about this application please reach out to me using one of the following methods:
 
   GitHub: [Sarah-El](https://github.com/Sarah-El)
   Email: [sarahlosbourne@gmail.com](mailto:sarahlosbourne@gmail.com)
-  
-  ## Screenshots
-  ![image](https://user-images.githubusercontent.com/117095370/217194931-3e636fe7-8285-441b-a545-f25e7a9678e1.png)
-  ![image](https://user-images.githubusercontent.com/117095370/217194999-6cd44147-3ab1-47e6-a53d-41fe18fca358.png)
